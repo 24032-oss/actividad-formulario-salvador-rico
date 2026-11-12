@@ -1,0 +1,70 @@
+body { margin: 0; font-family: Arial, sans-serif; }
+header { display: flex; justify-content: space-between; align-items: center; padding: 15px 25px; }
+header a { color: #003e58; text-decoration: none; }
+main:not(.login) { padding: 25px; }
+.login {
+    min-height: 100vh;
+    background-color: #c5daf5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-contenedor {
+    width: 400px;
+    max-width: calc(100% - 30px);
+    box-sizing: border-box;
+    background-color: white;
+    padding: 35px;
+    border-radius: 25px;
+    box-shadow: none;
+}
+.login-pestanas {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 25px;
+}
+.login-pestanas button {
+    background: none;
+    border: none;
+    color: #999;
+    padding: 12px 15px;
+    cursor: pointer;
+    font-size: 17px;
+    width: auto;
+    border-radius: 0;
+}
+.login-pestanas button.activo {
+    color: #003e58;
+    border-bottom: 3px solid #003e58;
+    font-weight: bold;
+}
+.login-formulario { text-align: center; }
+.login-formulario h2 { color: #173653; margin-bottom: 5px; }
+.login-formulario p { color: #173653; margin-bottom: 25px; }
+.login-formulario input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 7px;
+    background-color: #f2f0f2;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.login-formulario form button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 15px;
+    background-color: #003e58;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.login-formulario form button:hover { background-color: #075675; }
+.fondo-modal { position: fixed; inset: 0; background: rgba(0,0,0,.3); display: flex; align-items: center; justify-content: center; }
+.modal { background: white; padding: 25px; border-radius: 10px; text-align: center; }
+.modal button { background: #003e58; color: white; border: none; padding: 10px 25px; border-radius: 8px; cursor: pointer; }
